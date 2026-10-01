@@ -1,0 +1,14 @@
+{
+  "_note": "Example for technical boundaries (governance as code). In Task 7 you copy this file to .claude/settings.json and adjust it. Rules in settings.json are hard rules – unlike rules in CLAUDE.md, which the agent only follows if it understands them. Start a new session so they take effect.",
+  "permissions": {
+    "deny": [
+      "Bash(rm:*)",
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)",
+      "Edit(raw/**)",
+      "Write(raw/**)",
+      "WebFetch",
+      "WebSearch"
+    ]
+  }
+}
